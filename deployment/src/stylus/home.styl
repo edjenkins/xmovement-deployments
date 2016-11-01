@@ -1,32 +1,12 @@
 .about-container
-	background-color white
 	border none
-	padding 20px 0
-	position relative
-	&:after
-		content ''
-		background-color white
-		height 30px
-		width 100%
-		position absolute
-		z-index 1
-	&:after
-		bottom -15px
-		-ms-transform skewY(0.5deg)
-		-webkit-transform skewY(0.5deg)
-		transform skewY(0.5deg)
-	.about-summary-tile
-		background transparent
-		border none
-		p
-			margin 0 auto
-			max-width 400px
 
 .competition-container
 	background linear-gradient(150deg, lighten(main-color, 5%), darken(main-color, 5%)) !important
-	padding 40px 0
+	padding 30px 0
 	position relative
 	text-align center
+	dark-inset-shadow()
 	.competition-banner
 		border-radius 6px
 		color white
