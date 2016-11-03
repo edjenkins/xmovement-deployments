@@ -6,7 +6,11 @@
         <div class="black-overlay"></div>
         <div class="text-container">
             <h1>{{ trans('home.tagline', ['idea' => trans_choice('common.idea', 1)]) }}</h1>
-			@if (env('CREATION_PHASE_ENABLED', true))
+			@if (env('INTRO_VIDEO_ID', false))
+	            <a data-toggle="modal" data-target="#intro-video-modal">
+	                <button>{{ trans('home.watch_the_video') }}</button>
+	            </a>
+			@elseif (env('CREATION_PHASE_ENABLED', true))
 	            <a href="{{ action('IdeaController@add') }}">
 	                <button>{{ trans('home.get_started') }}</button>
 	            </a>
@@ -98,6 +102,18 @@
 	            </div>
 	        </div>
 	    </div>
+	@endif
+
+	@if (env('INTRO_VIDEO_ID', false))
+		<div class="modal fade video-modal" id="intro-video-modal" tabindex="-1" role="dialog">
+
+			<div class="modal-dialog" role="document">
+
+				<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/{{ env('INTRO_VIDEO_ID') }}?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen></iframe></div>
+
+			</div>
+
+		</div>
 	@endif
 
 @endsection

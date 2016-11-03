@@ -30,6 +30,10 @@ class DeploymentServiceProvider extends ServiceProvider
         // ], 'factories');
 
         $this->publishes([
+            __DIR__.'/images' => base_path('resources/assets/images/deployment'),
+        ], 'public');
+
+        $this->publishes([
             __DIR__.'/views' => base_path('resources/views/deployment'),
         ], 'views');
 
