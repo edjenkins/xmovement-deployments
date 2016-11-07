@@ -42,7 +42,8 @@ class DeploymentServiceProvider extends ServiceProvider
         ], 'public');
 
 	    $this->publishes([
-	        __DIR__.'/config/custom-pages.php' => config_path('custom-pages.php')
+	        __DIR__.'/config/custom-pages.php' => config_path('custom-pages.php'),
+			__DIR__.'/config/design-tasks.php' => config_path('design-tasks.php')			
 	    ]);
     }
 
