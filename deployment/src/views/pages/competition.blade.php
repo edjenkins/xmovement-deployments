@@ -16,10 +16,10 @@
 
 	<div class="container">
 
-		<div class="row terms-row">
+		<div class="row floating-page-row">
 
 			<div class="col-md-12">
-				<div class="terms-tile">
+				<div class="floating-page-tile">
 					<h3>
 						Competition Details
 					</h3>
