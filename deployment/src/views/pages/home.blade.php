@@ -73,12 +73,11 @@
 
 			<div class="competition-banner">
 
-				<h3>Win £250</h3>
+				<h3>Competition</h3>
+
 				<p>
-					We are currently running a competition for the best hosted events, you could be in with the chance of winning a large cash prize by simply organising an event for your fellow students through our platform and documenting it with photos and videos.
-					If you want to learn more about our competition then click below for the full details and terms.
+					We will be running a competition early 2017 so stay tuned for your chance to win.
 				</p>
-				<a href="/competition">Learn More</a>
 
 			</div>
 
