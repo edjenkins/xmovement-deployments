@@ -76,8 +76,10 @@
 				<h3>Competition</h3>
 
 				<p>
-					We will be running a competition early 2017 so stay tuned for your chance to win.
+					The competition is currently closed. We will be running a competition early 2017 so stay tuned for details on how you could win. In the meantime we welcome you to use EventMovement to take control of your education and organise learning events that you care about.
 				</p>
+
+				<a href="/contact">Contact Us</a> 
 
 			</div>
 
