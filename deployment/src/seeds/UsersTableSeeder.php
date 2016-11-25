@@ -25,6 +25,11 @@ class UsersTableSeeder extends Seeder
 					'description' => 'An online platofrm that allows self-harmers to discuss their experiences and seek professional help/guidance from one place. They could log events and upload photos as a diary to document their progression.',
 					'photo' => 'c6961eb7b2cd845440b1671cc9f249bfb85be3df.jpg',
 				),
+				array(
+					'name' => 'Digital Distraction Box',
+					'description' => 'A digital distraction box which is an extension from the standard physical distraction box but in digital form. The concept works by the self-harmer working their way past positive materials in a digital form, wether these are digital memories or links to positive websites.',
+					'photo' => '7c76f6e619d3b66273bad3bf5b64d88126aa71f8.jpg',
+				),
 			);
 
 	        $u->proposals()->save(factory(App\Proposal::class)->make());
