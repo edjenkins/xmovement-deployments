@@ -33,9 +33,9 @@ class DeploymentServiceProvider extends ServiceProvider
         //     __DIR__.'/views' => base_path('resources/views/deployment'),
         // ], 'views');
 
-        // $this->publishes([
-        //     __DIR__.'/stylus' => base_path('resources/assets/stylus/deployment'),
-        // ], 'public');
+        $this->publishes([
+            __DIR__.'/stylus' => base_path('resources/assets/stylus/deployment'),
+        ], 'public');
 
 	    // $this->publishes([
 	    //     __DIR__.'/config/custom-pages.php' => config_path('custom-pages.php')
