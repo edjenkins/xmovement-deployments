@@ -12,7 +12,9 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-		factory(App\User::class, 2)->create()->each(function($u) {
+		$num_events = 3;
+		
+		factory(App\User::class, $num_events)->create()->each(function($u) {
 
 			$events = array(
 				array(
