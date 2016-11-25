@@ -24,6 +24,11 @@ class UsersTableSeeder extends Seeder
 					'description' => 'An app to connect people with their family and close friends. Using intelligent prompts to initiate conversations based on common activities.',
 					'photo' => 'fce80ca77cf9e738b1c3c70e0712d27332971c0f.jpg',
 				),
+				array(
+					'name' => 'Experience Sharing Platform',
+					'description' => 'An online platofrm that allows self-harmers to discuss their experiences and seek professional help/guidance from one place. They could log events and upload photos as a diary to document their progression.',
+					'photo' => 'c6961eb7b2cd845440b1671cc9f249bfb85be3df.jpg',
+				),
 			);
 
 			$exists = true;
