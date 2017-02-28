@@ -69,6 +69,12 @@
 
 	</div>
 
+	<div class="container-fluid hero-container design-container" id="design-hero-container" style="background-image:url('https://xmovement.s3.amazonaws.com/assets/c4d/images/headers/c4d-home-2.svg')">
+        <div class="container text-container text-left">
+            <h1>Engage with the community in an exciting design process</h1>
+        </div>
+    </div>
+
 	@if(count($ideas) > 0)
 	    <div class="container-fluid featured-ideas-container">
 	        <div class="container">
