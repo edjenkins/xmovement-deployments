@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container-fluid hero-container" id="home-hero-container" style="background-image:url('{{ asset(getenv('APP_HOME_HEADER_IMG')) }}')">
+    <div class="container-fluid hero-container" id="home-hero-container">
         <div class="black-overlay"></div>
         <div class="container text-container text-left">
             <h1>{{ trans('home.tagline', ['idea' => trans_choice('common.idea', 1)]) }}</h1>
@@ -22,6 +22,10 @@
 				@endif
 			@endif
         </div>
+    </div>
+
+	<div class="strapline-container" id="strapline-container">
+        <h1>Get involved with local businesses and charities and your idea could be backed with £20,000.</h1>
     </div>
 
 	<div class="container-fluid about-container">
