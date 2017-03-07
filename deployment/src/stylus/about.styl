@@ -1,0 +1,210 @@
+.custom-about-page
+	padding-top 100px
+	.container
+		padding 0
+	.vertical-timeline-header
+		background main-color
+		color white
+		display block
+		font-size 26px
+		font-weight 700
+		left 50%
+		line-height 60px
+		margin-top -200px
+		margin-left -160px
+		position absolute
+		text-align center
+		z-index 3
+		width 320px
+		&:before
+			z-index 1
+			border-left #EB703C 160px solid
+			border-right #DD5143 160px solid
+			content ''
+			height 140px
+			display block
+	.about-launch-icon
+		border-radius 50%
+		height 140px
+		width 140px
+		position absolute
+		left 50%
+		margin-left -70px
+		line-height 140px
+		margin-bottom -40px
+		img
+			height 140px
+			width 140px
+			position relative
+	&:before
+		border-left 8px solid #30393E
+		content ''
+		background-color #DD5143
+		pointer-events none
+		position fixed
+		top 0
+		bottom 0
+		left 50%
+		right 0
+	&:after
+		border-right 8px solid #606866
+		content ''
+		background-color #EB703C
+		pointer-events none
+		position fixed
+		top 0
+		bottom 0
+		left 0
+		right 50%
+	.about-phase-row
+		position relative
+		z-index 2
+		.about-phase-row-content
+			width 100%
+			img.illustration
+				display block
+				max-height 400px
+				max-width 500px
+				width 100%
+			&.left-hand-side
+				padding 0px 80px 0px 0px
+				&.text-content
+					padding 60px 80px 60px 0px
+			&.right-hand-side
+				padding 0px 0px 0px 80px
+				&.text-content
+					padding 60px 0px 60px 80px
+			.phase-title
+				color white
+				font-size 32px
+				font-weight bold
+
+			.phase-description
+				color white
+				font-size 16px
+				font-weight bold
+				max-width 400px
+
+			.phase-detail
+				display none
+				color white
+				max-width 400px
+
+			.phase-read-more
+				background-color alpha(white, 0.1)
+				border-radius 4px
+				color white
+				display inline-block
+				padding 4px 8px
+				animate()
+				&:hover
+					cursor pointer
+					background-color alpha(white, 0.2)
+			.read-more-text
+				display inline-block
+			.read-less-text
+				display none
+			&.detail-visible
+				.phase-detail
+					display block
+				.read-more-text
+					display none
+				.read-less-text
+					display inline-block
+
+
+		.calendar-tile
+			background-color white
+			border-radius 10px
+			text-align center
+			height 94px
+			width 110px
+			left 50%
+			top 80px
+			margin-left -55px
+			position absolute
+			z-index 2
+			&:before
+				content ''
+				background-color main-color
+				border-top-left-radius 10px
+				border-top-right-radius 10px
+				display block
+				height 34px
+				width 100%
+			&:after
+				content ''
+				background-color #F7C856
+				border-top-left-radius 10px
+				display block
+				height 34px
+				width 50%
+				position absolute
+				top 0
+				z-index 1
+			h5
+				color white
+				font-size 1.2em
+				font-weight 700
+				line-height 34px
+				margin 0
+				padding 0
+				position absolute
+				top 0
+				left 0
+				right 0
+				text-align center
+				z-index 2
+			h3
+				color black
+				font-size 2.8em
+				font-weight 700
+				margin 0
+				padding 0
+				line-height 60px
+
+@media(max-width: $screen-sm-max)
+	.custom-about-page
+		padding-top 80px
+		.vertical-timeline-header
+			display block
+			width auto
+			left 0
+			right 0
+			margin 0
+			padding 0 20px
+			top 80px
+			position fixed
+			&:before
+				display none
+		.about-launch-icon
+			left 60px
+		&:before
+			left 60px
+			right 0
+		&:after
+			right calc(100% - 60px)
+		.about-phase-row
+			.about-phase-row-content
+				padding 0 0 0 110px !important
+				text-align left
+				width 100%
+				&.pull-right
+					float left
+					text-align left
+				.phase-title, .phase-description, .phase-detail
+					max-width 100%
+			.calendar-tile
+				top 0px
+				left 60px
+				height 84px
+				width 90px
+				margin-left -45px
+				&:before, &:after
+					height 28px
+				h5
+					font-size 1.1em
+					line-height 28px
+				h3
+					font-size 2.4em
+					line-height 55px
