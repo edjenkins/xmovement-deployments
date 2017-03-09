@@ -25,7 +25,7 @@
     </div>
 
 	<div class="strapline-container" id="strapline-container">
-        <h1>Get involved with local businesses and charities and your idea could be backed with £20,000.</h1>
+        <h1>{{ trans('create4dementia_home.strapline') }}</h1>
     </div>
 
 	<div class="container-fluid about-container">
@@ -75,7 +75,7 @@
 
 	<div class="container-fluid hero-container design-container" id="design-hero-container">
         <div class="container text-container text-left">
-            <h1>Engage with the community in an exciting design process</h1>
+            <h1>{{ trans('create4dementia_home.design_strapline') }}</h1>
 			<a href="{{ action('PageController@about') }}">
 				<button>{{ trans('home.learn_more') }}</button>
 			</a>
@@ -91,7 +91,7 @@
 
 	            <div class="row-fluid">
 	                @foreach ($ideas as $idea)
-	                    <div class="col-xs-12 col-sm-6 col-md-4">
+	                    <div class="col-xs-12 col-sm-4">
 	                        @include('ideas.tile')
 	                    </div>
 	                @endforeach

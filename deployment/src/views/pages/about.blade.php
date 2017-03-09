@@ -9,19 +9,15 @@
 		<div class="page-header about-page-header">
 
 			<div class="quote-wrapper">
-				<h5 class="quote">
+				<h5 class="quote">{{ trans('create4dementia_about.quote') }}</h5>
 
-					"Create4Dementia is a competition hosted by LaunchSpot, a service that connects community members with small development companies to design and develop technologies for good."
-
-				</h5>
-
-				<p class="quote-author">- Open Lab, Newcastle University</p>
+				<p class="quote-author">- {{ trans('create4dementia_about.quote_author') }}</p>
 			</div>
 
 			<!-- How it works -->
 
 			<div class="vertical-timeline-header">
-				How it Works
+				{{ trans('create4dementia_about.how_it_works') }}
 			</div>
 
 		</div>
@@ -63,8 +59,8 @@
 						</p>
 
 						<p class="phase-read-more" onClick="$(this).parent().toggleClass('detail-visible')">
-							<span class="read-more-text">Read more</span>
-							<span class="read-less-text">Read less</span>
+							<span class="read-more-text">{{ trans('common.read_more') }}</span>
+							<span class="read-less-text">{{ trans('common.read_less') }}</span>
 						</p>
 					</div>
 
