@@ -1,29 +1,52 @@
-@extends('layouts.app')
+@extends('layouts.app', ['bodyclasses' => 'colorful'])
 
 @section('content')
 
-	<div class="custom-about-page">
+	<div class="about-page">
 
-		<div class="vertical-timeline-header">
-			How it Works
+		<!-- About -->
+
+		<div class="page-header about-page-header">
+
+			<div class="quote-wrapper">
+				<h5 class="quote">
+
+					"Create4Dementia is a competition hosted by LaunchSpot, a service that connects community members with small development companies to design and develop technologies for good."
+
+				</h5>
+
+				<p class="quote-author">- Open Lab, Newcastle University</p>
+			</div>
+
+			<!-- How it works -->
+
+			<div class="vertical-timeline-header">
+				How it Works
+			</div>
+
 		</div>
 
-		<div class="vertical-timeline-bar"></div>
+		<div class="custom-about-page">
 
-		<div class="container">
+			<!-- Padding -->
 
-			<!-- First Row -->
+			<div class="timeline-row">
 
-			<div class="about-phase-row animated fadeIn">
+				<div class="timeline-col timeline-col-left"></div>
 
-				<div class="calendar-tile">
-					<h5>March</h5>
-					<h3>27</h3>
-				</div>
+				<div class="timeline-bar"></div>
 
-				<div class="col-md-6">
+				<div class="hidden-xs hidden-sm timeline-col timeline-col-right"></div>
 
-					<div class="about-phase-row-content text-content left-hand-side">
+			</div>
+
+			<!-- Inspire -->
+
+			<div class="timeline-row">
+
+				<div class="timeline-col timeline-col-left">
+
+					<div class="about-phase-row-content text-content">
 
 						<h3 class="phase-title">
 							{{ trans('about.inspire-phase-title') }}
@@ -43,38 +66,32 @@
 							<span class="read-more-text">Read more</span>
 							<span class="read-less-text">Read less</span>
 						</p>
-
 					</div>
 
 				</div>
 
-				<div class="col-md-6">
+				<div class="timeline-bar">
 
-					<div class="about-phase-row-content right-hand-side">
-
-						<img src="{{ asset(env('S3_URL') . '/images/about/inspiration.svg') }}" class="illustration">
-
+					<div class="calendar-tile">
+						<h5>March</h5>
+						<h3>27</h3>
 					</div>
 
 				</div>
 
-				<div class="clearfloat"></div>
+				<div class="timeline-col-illustration hidden-xs hidden-sm timeline-col timeline-col-right" style="background-image: url('{{ asset(env('S3_URL') . '/images/about/inspiration.svg') }}')"></div>
 
 			</div>
 
+			<!-- Design -->
 
-			<!-- Second Row -->
+			<div class="timeline-row">
 
-			<div class="about-phase-row animated fadeIn">
+				<div class="timeline-col-illustration hidden-xs hidden-sm timeline-col timeline-col-left" style="background-image: url('{{ asset(env('S3_URL') . '/images/about/design.svg') }}')"></div>
 
-				<div class="calendar-tile">
-					<h5>April</h5>
-					<h3>10</h3>
-				</div>
+				<div class="visible-xs visible-sm timeline-col timeline-col-left">
 
-				<div class="col-sm-12 col-md-6 col-md-push-6">
-
-					<div class="about-phase-row-content text-content right-hand-side text-left">
+					<div class="about-phase-row-content text-content">
 
 						<h3 class="phase-title">
 							{{ trans('about.design-phase-title') }}
@@ -94,95 +111,181 @@
 							<span class="read-more-text">Read more</span>
 							<span class="read-less-text">Read less</span>
 						</p>
-
 					</div>
 
 				</div>
 
-				<div class="col-sm-12 col-md-6 col-md-pull-6">
+				<div class="timeline-bar">
 
-					<div class="about-phase-row-content left-hand-side">
-
-						<img src="{{ asset(env('S3_URL') . '/images/about/design.svg') }}" class="illustration">
-
+					<div class="calendar-tile">
+						<h5>April</h5>
+						<h3>9</h3>
 					</div>
 
 				</div>
 
-				<div class="clearfloat"></div>
+				<div class="hidden-xs hidden-sm timeline-col timeline-col-right">
 
-			</div>
-
-			<!-- Third Row -->
-
-			<div class="about-phase-row animated fadeIn">
-
-				<div class="calendar-tile">
-					<h5>April</h5>
-					<h3>17</h3>
-				</div>
-
-				<div class="col-md-6">
-
-					<div class="about-phase-row-content text-content left-hand-side">
+					<div class="about-phase-row-content text-content">
 
 						<h3 class="phase-title">
-							{{ trans('about.build-phase-title') }}
+							{{ trans('about.design-phase-title') }}
 						</h3>
 
 						<p class="phase-description">
-							{{ trans('about.build-phase-description') }}
+							{{ trans('about.design-phase-description') }}
 						</p>
 
 						<div class="clearfloat"></div>
 
 						<p class="phase-detail">
-							{{ trans('about.build-phase-detail') }}
+							{{ trans('about.design-phase-detail') }}
 						</p>
 
 						<p class="phase-read-more" onClick="$(this).parent().toggleClass('detail-visible')">
 							<span class="read-more-text">Read more</span>
 							<span class="read-less-text">Read less</span>
 						</p>
-
 					</div>
 
 				</div>
-
-				<div class="col-md-6">
-
-					<div class="about-phase-row-content right-hand-side">
-
-						<img src="{{ asset(env('S3_URL') . '/images/headers/c4d-home.svg') }}" class="illustration">
-
-					</div>
-
-				</div>
-
-				<div class="clearfloat"></div>
 
 			</div>
 
-			<div class="about-phase-row">
+			<!-- Build -->
 
-				<div class="col-md-12">
+			<div class="timeline-row">
 
-					<div class="about-phase-row-content text-center">
+				<div class="timeline-col timeline-col-left">
 
-						<div class="about-launch-icon">
-							<img src="{{ asset(env('S3_URL') . '/icons/propose.svg') }}" />
-						</div>
+					<div class="about-phase-row-content text-content">
 
+						<h3 class="phase-title">
+							{{ trans('about.tender-phase-title') }}
+						</h3>
+
+						<p class="phase-description">
+							{{ trans('about.tender-phase-description') }}
+						</p>
+
+						<div class="clearfloat"></div>
+
+						<p class="phase-detail">
+							{{ trans('about.tender-phase-detail') }}
+						</p>
+
+						<p class="phase-read-more" onClick="$(this).parent().toggleClass('detail-visible')">
+							<span class="read-more-text">Read more</span>
+							<span class="read-less-text">Read less</span>
+						</p>
 					</div>
 
 				</div>
 
-				<div class="clearfloat"></div>
+				<div class="timeline-bar">
+
+					<div class="calendar-tile">
+						<h5>April</h5>
+						<h3>17</h3>
+					</div>
+
+				</div>
+
+				<div class="timeline-col-illustration hidden-xs hidden-sm timeline-col timeline-col-right" style="background-image: url('{{ asset(env('S3_URL') . '/images/about/tender.svg') }}')"></div>
+
+			</div>
+
+			<!-- Winner -->
+
+			<div class="timeline-row">
+
+				<div class="timeline-col-illustration hidden-xs hidden-sm timeline-col timeline-col-left" style="background-image: url('{{ asset(env('S3_URL') . '/images/about/winner.svg') }}')"></div>
+
+				<div class="visible-xs visible-sm timeline-col timeline-col-left">
+
+					<div class="about-phase-row-content text-content">
+
+						<h3 class="phase-title">
+							{{ trans('about.winner-phase-title') }}
+						</h3>
+
+						<p class="phase-description">
+							{{ trans('about.winner-phase-description') }}
+						</p>
+
+						<div class="clearfloat"></div>
+
+						<p class="phase-detail">
+							{{ trans('about.winner-phase-detail') }}
+						</p>
+
+						<p class="phase-read-more" onClick="$(this).parent().toggleClass('detail-visible')">
+							<span class="read-more-text">Read more</span>
+							<span class="read-less-text">Read less</span>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="timeline-bar">
+
+					<div class="calendar-tile">
+						<h5>May</h5>
+						<h3>6</h3>
+					</div>
+
+				</div>
+
+				<div class="hidden-xs hidden-sm timeline-col timeline-col-right">
+
+					<div class="about-phase-row-content text-content">
+
+						<h3 class="phase-title">
+							{{ trans('about.winner-phase-title') }}
+						</h3>
+
+						<p class="phase-description">
+							{{ trans('about.winner-phase-description') }}
+						</p>
+
+						<div class="clearfloat"></div>
+
+						<p class="phase-detail">
+							{{ trans('about.winner-phase-detail') }}
+						</p>
+
+						<p class="phase-read-more" onClick="$(this).parent().toggleClass('detail-visible')">
+							<span class="read-more-text">Read more</span>
+							<span class="read-less-text">Read less</span>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Padding -->
+
+			<div class="timeline-row">
+
+				<div class="timeline-col timeline-col-left"></div>
+
+				<div class="timeline-bar"></div>
+
+				<div class="hidden-xs hidden-sm timeline-col timeline-col-right"></div>
 
 			</div>
 
 		</div>
 
-	</div>
+		<!-- Launch icon -->
+		<div class="about-launch-icon">
+			<img src="{{ asset(env('S3_URL') . '/icons/propose.svg') }}" />
+		</div>
+
+		<!-- Partners -->
+		@include('deployment.components.partners')
+
+</div>
 
 @endsection

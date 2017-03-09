@@ -76,6 +76,9 @@
 	<div class="container-fluid hero-container design-container" id="design-hero-container" style="background-image:url('https://xmovement.s3.amazonaws.com/assets/c4d/images/headers/c4d-home-2.svg')">
         <div class="container text-container text-left">
             <h1>Engage with the community in an exciting design process</h1>
+			<a href="{{ action('PageController@about') }}">
+				<button>{{ trans('home.learn_more') }}</button>
+			</a>
         </div>
     </div>
 
@@ -96,5 +99,7 @@
 	        </div>
 	    </div>
 	@endif
+
+	@include('deployment.components.partners')
 
 @endsection
