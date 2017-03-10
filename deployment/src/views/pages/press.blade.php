@@ -84,7 +84,7 @@
 
 					<p>If you would like to blog about Create4Dementia by LaunchSpot please use our press release. Just click the button below to download.</p>
 
-					<button type="button" name="button" class="btn btn-success">Download Press Release</button>
+					<a href="https://xmovement.s3.amazonaws.com/assets/c4d/press/launchspot_create4dementia_press_release.pdf" target="_blank" type="button" name="button" class="btn btn-success">Download Press Release</a>
 
 					<div class="clearfloat"></div>
 
