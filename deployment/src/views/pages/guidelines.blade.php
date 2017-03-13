@@ -73,6 +73,8 @@
 
 					<p>Output from the competition – whether it be participants’ comments during the early stages or winning contributions - may be used in post-promotion publicity.</p>
 
+					<p>LaunchSpot reserves the right to make changes to information published in this guidelines document, including without limitation, specifications and product descriptions, at any time and without notice.</p>
+
 				</div>
 
 			</div>
