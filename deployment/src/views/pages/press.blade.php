@@ -93,7 +93,7 @@
 				<div style="background-color: transparent">
 
 					<br>
-					<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">Out of the Way—Daily Life, second prize stories. By Russian photographer Elena Anosova <a href="https://t.co/PqkD2f3zDc">https://t.co/PqkD2f3zDc</a> <a href="https://twitter.com/hashtag/WPPh2017?src=hash">#WPPh2017</a> <a href="https://t.co/pqHxITcha4">pic.twitter.com/pqHxITcha4</a></p>&mdash; World Press Photo (@WorldPressPhoto) <a href="https://twitter.com/WorldPressPhoto/status/838267967385264129">March 5, 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en-gb"><p lang="en" dir="ltr">Are you interested in dementia &amp; technology? Do you want to make a positive change? Sign up: <a href="https://t.co/2WfvAngU7Y">https://t.co/2WfvAngU7Y</a> <a href="https://twitter.com/hashtag/create4dementia?src=hash">#create4dementia</a> <a href="https://t.co/zwfWaidy4q">pic.twitter.com/zwfWaidy4q</a></p>&mdash; Create4Dementia (@bylaunchspot) <a href="https://twitter.com/bylaunchspot/status/841694128597565440">14 March 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 					<div class="clearfloat"></div>
 
