@@ -279,6 +279,9 @@
 			<img src="{{ asset(env('S3_URL') . '/icons/propose.svg') }}" />
 		</div>
 
+		<!-- Get Involved -->
+		@include('deployment.components.get-involved')
+
 		<!-- Partners -->
 		@include('deployment.components.partners')
 

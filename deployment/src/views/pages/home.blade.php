@@ -76,9 +76,16 @@
 	<div class="container-fluid hero-container design-container" id="design-hero-container">
         <div class="container text-container text-left">
             <h1>{{ trans('create4dementia_home.design_strapline') }}</h1>
-			<a href="{{ action('PageController@about') }}">
-				<button>{{ trans('home.learn_more') }}</button>
-			</a>
+
+			@if (Auth::guest())
+				<a target="_self" href="{{ action('Auth\AuthController@showRegistrationForm') }}">
+					<button>Get Involved</button>
+				</a>
+			@else
+				<a target="_self" href="{{ action('PageController@about') }}">
+					<button>Learn More</button>
+				</a>
+			@endif
         </div>
     </div>
 
