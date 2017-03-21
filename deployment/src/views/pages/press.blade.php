@@ -39,7 +39,7 @@
 						<div class="col-sm-6 col-md-4">
 							<?php
 								// for ($i=1; $i <= 4; $i++) {
-								for ($i=9; $i <= 10; $i++) {
+								for ($i=9; $i <= 11; $i++) {
 							?>
 								<img style="height:auto;width:100%;" src="https://xmovement.s3.amazonaws.com/assets/c4d/press/images/press_<?php echo $i; ?>.png" alt="">
 							<?php } ?>

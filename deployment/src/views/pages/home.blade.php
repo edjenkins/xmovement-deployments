@@ -107,6 +107,10 @@
 	    </div>
 	@endif
 
+	<!-- Get Involved -->
+	@include('deployment.components.get-involved')
+
+	<!-- Partners -->
 	@include('deployment.components.partners')
 
 @endsection
