@@ -34,44 +34,14 @@
 			z-index 3
 			width 320px
 
-	.hero-container.partners-container
-		background-color #333 !important
-		margin-top 0
-		padding 80px 10px 40px 10px
-
 	.container
 		padding 0
 
 	.timeline-row
-		display -webkit-flex
-		display -ms-flexbox
-		display flex
+		background-color #EB703C
 		.timeline-col
-			flex 1
 			.text-content
 				padding 20px
-		.timeline-bar
-			flex 0 0 260px
-			position relative
-			&:before
-				content ''
-				background-color #EB703C
-				border-right 8px solid #606866
-				position absolute
-				top 0
-				bottom 0
-				left 0
-				right calc(260px / 2)
-			&:after
-				content ''
-				background-color #DD5143
-				border-left 8px solid #30393E
-				position absolute
-				top 0
-				bottom 0
-				right 0
-				left calc(260px / 2)
-
 		.timeline-col
 			background-size contain
 			background-repeat no-repeat
@@ -80,17 +50,17 @@
 			padding 50px 0px
 			animate()
 			&.timeline-col-illustration
+				min-height 300px
 				padding 10px 0px
 	.timeline-col-left
-		background-color #EB703C
+		//background-color #EB703C
 		background-position right
 		float left
 		.about-phase-row-content
 			float right
 			width 100%
-			max-width calc((900px / 2))
 	.timeline-col-right
-		background-color #DD5143
+		//background-color #DD5143
 		background-position left
 		float right
 		.about-phase-row-content
@@ -169,19 +139,6 @@
 			width 140px
 			position relative
 
-	ul.partners-logos
-		cleanlist()
-		margin 0 auto
-		max-width 800px
-		text-align center
-		li
-			cleanlist()
-			display inline-block
-			padding 10px
-			img
-				max-width 200px
-				width 200px
-
 	.calendar-tile
 		background-color white
 		border-radius 10px
@@ -232,63 +189,98 @@
 			padding 0
 			line-height 60px
 
-	@media(max-width: $screen-sm-max)
-		.custom-about-page
-			.timeline-row
-				.timeline-col
-					background-color #EB703C
-					float left
-					padding 0px 0px
-					width calc(100% - 120px)
-					&.timeline-col-right
-						flex: 0;
-					.about-phase-row-content.text-content
-						float none
-						margin 0 auto
-				.timeline-bar
-					.calendar-tile
-						top 60px
 
-	@media(max-width: $screen-xs-max)
-		.custom-about-page
-			.timeline-row
-				.timeline-col
-					background-color #EB703C
-					float left
-					padding 0px 0px
-					width calc(100% - 120px)
-					&.timeline-col-right
-						flex: 0;
-					.about-phase-row-content.text-content
-						float left
-				.timeline-bar
-					flex 0 0 130px
-					position relative
-					&:before
-						content ''
-						background-color #EB703C
-						border-right 8px solid #606866
-						position absolute
-						top 0
-						bottom 0
-						left 0
-						right calc(130px / 2)
-					&:after
-						content ''
-						background-color #DD5143
-						border-left 8px solid #30393E
-						position absolute
-						top 0
-						bottom 0
-						right 0
-						left calc(130px / 2)
+
+
+
+
+
+
+//
+
+.about-page
+	.timeline-row
+		display block
+		position relative
+		&:before, &:after
+			content ''
+			bottom 0
+			top 0
+			position absolute
+			width 6px
+		&:before
+			background-color #444
+			left calc(50%)
+		&:after
+			background-color #666
+			left calc(50% - 6px)
+		.timeline-col-left, .timeline-col-right, .timeline-bar
+			display block
+			float left
+		.timeline-col-left
+			width calc((100% - 260px) / 2)
+		.timeline-bar
+			position absolute
+			left calc(50% - 130px)
+			width 260px
+		.timeline-col-right
+			float right
+			width calc((100% - 260px) / 2)
+		@media(max-width: $screen-sm-max)
+
+			&:before, &:after
+				content ''
+				bottom 0
+				top 0
+				position absolute
+				width 6px
+			&:before
+				left auto
+				right calc((160px / 2) - 6px)
+			&:after
+				left auto
+				right calc((160px / 2))
+			.timeline-col
+				padding 0
+				.about-phase-row-content.text-content
+					float none
+					margin 0 auto
+			.timeline-bar
+				left auto
+				right 0px
+				width 160px
+				.calendar-tile
+					top 60px
+			.timeline-col-left, .timeline-col-right
+				width calc(100% - 160px)
+
+
+// Partner
+
+.about-page
+	.hero-container.partners-container
+		background-color #333 !important
+		margin-top 0
+		padding 80px 10px 40px 10px
+		ul.partners-logos
+			cleanlist()
+			margin 0 auto
+			max-width 800px
+			text-align center
+			li
+				cleanlist()
+				display inline-block
+				padding 10px
+				img
+					max-width 200px
+					width 200px
 
 
 // Get Involved Banner
 
 #get-involved-container
 	background-color #49a4d1
-	padding 80px 20px
+	padding 120px 20px 80px 20px
 	text-align center
 	h1
 		color white
@@ -304,6 +296,3 @@
 		font-size 1.4em
 		margin-top 20px
 		padding 10px 25px
-
-.about-page #get-involved-container
-	padding 120px 20px 80px 20px
