@@ -12,7 +12,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="http://www.nhs.uk" target="_blank">
+				<a href="http://www.nihr.ac.uk" target="_blank">
 					<img src="https://xmovement.s3.amazonaws.com/assets/c4d/logos/nhs-logo-white.svg" alt="">
 				</a>
 			</li>
