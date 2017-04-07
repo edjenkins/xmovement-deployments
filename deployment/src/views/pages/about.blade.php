@@ -175,8 +175,8 @@
 					<div class="timeline-bar">
 
 						<div class="calendar-tile">
-							<h5>April</h5>
-							<h3>17</h3>
+							<h5>May</h5>
+							<h3>1</h3>
 						</div>
 
 					</div>
@@ -227,7 +227,7 @@
 
 						<div class="calendar-tile">
 							<h5>May</h5>
-							<h3>6</h3>
+							<h3>15</h3>
 						</div>
 
 					</div>
