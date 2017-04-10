@@ -5,11 +5,19 @@ return array(
     'polls' => [
         [
             'name' => 'How long?',
-            'description' => 'How long should this event be? Choose an option, or add your own.'
+            'description' => 'How long should this event be? Choose an option, or add your own.',
+            'options' => [
+              '1 hour',
+              '2 hours',
+              ],
         ],
         [
             'name' => 'When is best?',
-            'description' => 'When is best to hold this event? Choose an option, or add your own.'
+            'description' => 'When is best to hold this event? Choose an option, or add your own.',
+            'options' => [
+              'Weekday evenings',
+              'Saturday daytime',
+              ],
         ],
     ],
 
