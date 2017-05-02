@@ -176,7 +176,7 @@
 
 						<div class="calendar-tile">
 							<h5>May</h5>
-							<h3>1</h3>
+							<h3>8</h3>
 						</div>
 
 					</div>
@@ -227,7 +227,7 @@
 
 						<div class="calendar-tile">
 							<h5>May</h5>
-							<h3>25</h3>
+							<h3>22</h3>
 						</div>
 
 					</div>
