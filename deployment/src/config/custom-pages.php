@@ -14,6 +14,18 @@ return array(
 			'name' => 'Guidelines',
 			'nav' => false,
 			'footer' => true
+		],
+		[
+			'route' => '/tender',
+			'name' => 'Tender',
+			'nav' => true,
+			'footer' => false
+		],
+		[
+			'route' => '/idea/14/mindfood',
+			'name' => 'Winner',
+			'nav' => true,
+			'footer' => false
 		]
     ]
 

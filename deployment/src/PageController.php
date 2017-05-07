@@ -48,4 +48,14 @@ class PageController extends Controller
 
 	    return view('deployment.pages.press');
 	}
+
+	public function tender(Request $request)
+	{
+		# META
+		MetaTag::set('title', Lang::get('meta.tender_title'));
+		MetaTag::set('description', Lang::get('meta.tender_description'));
+		# META
+
+	    return view('deployment.pages.tender');
+	}
 }
