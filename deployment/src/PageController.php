@@ -17,9 +17,8 @@ use View;
 
 class PageController extends Controller
 {
-    // public function example(Request $request)
-	// {
-	//     return view('deployment.pages.example');
-	// }
-
+    public function event(Request $request)
+    {
+        return view('deployment.pages.event');
+    }
 }
