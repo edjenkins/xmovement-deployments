@@ -20,12 +20,6 @@ return array(
 			'name' => 'Tender',
 			'nav' => true,
 			'footer' => false
-		],
-		[
-			'route' => '/idea/14/mindfood',
-			'name' => 'Winner',
-			'nav' => true,
-			'footer' => false
 		]
     ]
 

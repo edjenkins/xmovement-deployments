@@ -1,13 +1,13 @@
 @extends('layouts.app', ['bodyclasses' => 'transparent medium-grey'])
 
 @section('content')
-    <div class="container-fluid hero-container shallow" id="terms-hero-container" style="background-image:url('{{ getenv('APP_TERMS_HEADER_IMG') }}')">
+    <div class="container-fluid hero-container shallow" id="contact-hero-container" style="background-image:url('{{ getenv('APP_TENDER_HEADER_IMG') }}')">
         <div class="black-overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-container">
-                        <h1>Tender</h1>
+                        <h1>Tender Phase</h1>
                     </div>
                 </div>
             </div>
@@ -22,17 +22,17 @@
 
 				<div class="floating-page-tile">
 
-          <p>The winning idea has been selected and we are now accepting tenders for a contract worth upto £20,000 to develop the winning idea.</p>
+          <p>Three ideas have been shortlisted and we are now accepting tenders for a contract worth upto £20,000 to develop one of them.</p>
 
           <h3>
 						What is the tender for?
 					</h3>
 
-          <p>The tender is for a work contract worth up to £20,000 to develop an open-source solution to the winning idea proposed by our community to help those living with dementia.</p>
+          <p>The tender is for a work contract worth up to £20,000 to develop an open-source solution to one of the shortlisted ideas proposed by our community to help those living with dementia.</p>
 
-          <p>The link below is to the winning idea:</p>
+          <p>The link below is to the shortlisted ideas:</p>
 
-          <a href="/explore" target="_self">Winning Idea</a>
+          <a href="/explore" class="btn btn-primary" target="_self">View the shortlist</a>
 
           <hr>
 
@@ -80,9 +80,11 @@
 
           <p>We recommend that you submit your tender as early as possible and engage with the community here on the site to be in with the best chance of success.</p>
 
-          <p>In order to submit a tender you will need to register on the site, then visit the winning idea's page <a href="/explore" target="_self">here</a> and click the 'Submit Tender' button on the right.</p>
+          <p>In order to submit a tender you will need to register on the site, then visit one of the shortlisted ideas <a href="/explore" target="_self">here</a> and click the 'Submit Tender' button on the right.</p>
 
-          <p>If you have any questions please feel free to <a href="/contact" target="_self">contact us</a>.</p>
+          <p>If you have any questions please feel free to contact us below.</p>
+
+          <a href="/contact" class="btn btn-primary" target="_self">Contact us</a>
 
 				</div>
 
