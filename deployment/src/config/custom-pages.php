@@ -2,13 +2,13 @@
 
 return array(
 
-    'pages' => [
-        [
-			// 'route' => '/example',
-			// 'name' => 'Example',
-			// 'nav' => false,
-			// 'footer' => false
-		]
+  'pages' => [
+      [
+        'route' => 'http://venturefestnortheast.com',
+        'name' => 'Event Registration',
+        'nav' => true,
+        'footer' => false
     ]
+  ]
 
 );
