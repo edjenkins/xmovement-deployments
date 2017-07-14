@@ -31,9 +31,11 @@
       <div class="col-sm-4">
         <div class="about-summary-tile">
           <img src="{{ asset(env('S3_URL') . '/icons/support.svg') }}" />
-          <h3>
-            {{ trans('about.summary-first-title') }}
-          </h3>
+          <a target="_self" href="{{ action('IdeaController@add') }}">
+            <h3>
+              {{ trans('about.summary-first-title') }}
+            </h3>
+          </a>
 
           <p>
             {{ trans('about.summary-first-description') }}
@@ -43,9 +45,11 @@
       <div class="col-sm-4">
         <div class="about-summary-tile">
           <img src="{{ asset(env('S3_URL') . '/icons/design.svg') }}" />
-          <h3>
-            {{ trans('about.summary-second-title') }}
-          </h3>
+          <a target="_self" href="{{ action('IdeaController@index') }}">
+            <h3>
+              {{ trans('about.summary-second-title') }}
+            </h3>
+          </a>
 
           <p>
             {{ trans('about.summary-second-description') }}
@@ -55,9 +59,11 @@
       <div class="col-sm-4">
         <div class="about-summary-tile">
           <img src="{{ asset(env('S3_URL') . '/icons/propose.svg') }}" />
-          <h3>
-            {{ trans('about.summary-third-title') }}
-          </h3>
+          <a target="_blank" href="http://venturefestnortheast.com/">
+            <h3>
+              {{ trans('about.summary-third-title') }}
+            </h3>
+          </a>
 
           <p>
             {{ trans('about.summary-third-description') }}
@@ -69,11 +75,32 @@
 
   </div>
 
-  <div class="container-fluid info-container">
+  <div class="container-fluid info-container" style="background-color:#f2f2f2;padding:20px">
+
+    <div class="container" style="text-align:center">
+
+      <a href="http://venturefestnortheast.com/" target="_blank">
+        <img src="https://s3.amazonaws.com/xmovement/assets/vfne/logos/venturefest-colour-logo.png" alt="" style="height: 60px;display:inline-block;margin:20px">
+      </a>
+
+      <a href="http://ec.europa.eu/regional_policy/en/funding/erdf/" target="_blank">
+        <img src="https://s3.amazonaws.com/xmovement/assets/vfne/logos/erdf-colour-logo.png" alt="" style="height: 40px;display:inline-block;margin:20px">
+      </a>
+
+      <div class="clearfix"></div>
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid info-container" style="margin-top: 0">
 
     <div class="container">
 
-      <p>VentureFest North East is the region’s innovation conference. It's all about bringing people together to create new business opportunities and make exciting things happen. VentureFest helps businesses to use innovation to remain relevant, competitive and profitable in this fast-changing global marketplace. Spend a day with us and you’ll leave with practical tools, ideas and expertise that impact on the bottom line and bring about business growth.</p>
+      <p>VentureFest North East is the region’s innovation conference, taking place on 14th November 2017. The event is designed by businesses for businesses. We've always worked closely with organisations that represent the needs of the business community to shape the entire event programme. Now we are going one step further by asking you to help to directly design a new People's Choice element of the event.</p>
+
+      <a href="/about">Help us shape VentureFest North East 2017!</a>
+
     </div>
 
   </div>

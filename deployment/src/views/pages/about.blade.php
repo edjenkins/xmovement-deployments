@@ -19,66 +19,25 @@
 
     <div class="container">
 
-      <div class="row about-summary-row">
-
-        <div class="col-sm-4">
-          <div class="about-summary-tile animated fadeInUp">
-            <img src="{{ asset(env('S3_URL') . '/icons/support.svg') }}" />
-            <h3>
-              {{ trans('about.summary-first-title') }}
-            </h3>
-
-            <p>
-              {{ trans('about.summary-first-description') }}
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="about-summary-tile animated fadeInUp">
-            <img src="{{ asset(env('S3_URL') . '/icons/design.svg') }}" />
-            <h3>
-              {{ trans('about.summary-second-title') }}
-            </h3>
-
-            <p>
-              {{ trans('about.summary-second-description') }}
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="about-summary-tile animated fadeInUp">
-            <img src="{{ asset(env('S3_URL') . '/icons/propose.svg') }}" />
-            <h3>
-              {{ trans('about.summary-third-title') }}
-            </h3>
-
-            <p>
-              {{ trans('about.summary-third-description') }}
-            </p>
-          </div>
-        </div>
-
-      </div>
-
       <div class="row about-phase-row">
 
         <div class="col-md-12">
 
-          <div class="about-phase-tile animated fadeIn">
+          <div class="about-phase-tile info-tile animated fadeIn">
 
-            <p>VentureFest North East is designed by businesses for businesses. We've always worked closely with organisations that represent the needs of the business community to shape the entire event programme. Now we are going one step further by asking you to help to directly design a new People's Choice element of the event. Based on feedback at previous events, we know emerging technologies is a topic of interest to many of you and it's a subject that affects us all. But what exactly would you like to know more about? What piques your interest? What about immersive technologies such as artificial intelligence and virtual reality? How about printable electronics or med-tech? Or what about 5G or the Internet of Things? Don't be limited by these suggestions - we're open to all ideas. </p>
+            <p>Based on feedback at previous events, we know emerging technologies is a topic of interest to many of you and it's a subject that affects us all. But what exactly would you like to know more about? What piques your interest? What about immersive technologies such as artificial intelligence and virtual reality? How about printable electronics or med-tech? Or what about 5G or the Internet of Things? Don't be limited by these suggestions - we're open to all ideas.</p>
 
             <br>
-            
+
             <p>This web platform, designed by Newcastle University's Open Lab, will allow you have your say.</p>
 
           </div>
 
           <div class="about-phase-tile animated fadeIn">
 
-            <div class="phase-step-indicator">
-              1
-            </div>
+            <a target="_self" href="{{ action('IdeaController@add') }}" class="phase-step-indicator">
+              <img src="{{ asset(env('S3_URL') . '/icons/support.svg') }}" />
+            </a>
 
             <h3>
               {{ trans('about.phase-first-title') }}
@@ -90,16 +49,21 @@
 
             <br />
 
-            <p>
+            <p hidden>
               {{ trans('about.phase-first-detail') }}
             </p>
+
+            <a target="_self" href="{{ action('IdeaController@add') }}" class="btn">
+              Suggest a Topic
+            </a>
+
           </div>
 
           <div class="about-phase-tile animated fadeIn">
 
-            <div class="phase-step-indicator">
-              2
-            </div>
+            <a target="_self" href="{{ action('IdeaController@index') }}" class="phase-step-indicator">
+              <img src="{{ asset(env('S3_URL') . '/icons/design.svg') }}" />
+            </a>
 
             <h3>
               {{ trans('about.phase-second-title') }}
@@ -111,16 +75,21 @@
 
             <br />
 
-            <p>
+            <p hidden>
               {{ trans('about.phase-second-detail') }}
             </p>
+
+            <a target="_self" href="{{ action('IdeaController@index') }}" class="btn">
+              Explore Suggested Topics
+            </a>
+
           </div>
 
           <div class="about-phase-tile animated fadeIn">
 
-            <div class="phase-step-indicator">
-              3
-            </div>
+            <a target="_blank" href="http://venturefestnortheast.com/" class="phase-step-indicator">
+              <img src="{{ asset(env('S3_URL') . '/icons/propose.svg') }}" />
+            </a>
 
             <h3>
               {{ trans('about.phase-third-title') }}
@@ -132,9 +101,14 @@
 
             <br />
 
-            <p>
+            <p hidden>
               {{ trans('about.phase-third-detail') }}
             </p>
+
+            <a target="_blank" href="http://venturefestnortheast.com/" class="btn">
+              Register for VentureFest
+            </a>
+
           </div>
 
         </div>
